@@ -1,15 +1,165 @@
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+// Variable of bootstrap //
+$theme-colors: (
+  "primary": #007bff,
+  "danger": #ff4136
+);
 
-  li { display: inline-block; }
+// Colors //
+$graylight: #ccc;
 
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
+
+
+
+
+// Import all styles of bootstrap //
+@import "./../../../bootstrap/scss/bootstrap";
+
+
+
+//-------------------- VARIABLES GLOBALES------------------------ //
+// Paragraphs Global //
+p {
+  font-size: 14px;
+}
+
+// h1 Global and styles of row //
+.galleryTitle {
+  border-bottom: 1px solid $graylight;
+  margin-bottom: 65px;
+  border-top: 1px solid $graylight;
+}
+
+h1 {
+  margin: 16px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+
+
+
+
+
+/*=============================================
+=            Begin: styles of Navbar            =
+=============================================*/
+.bg-dark {
+  background-color: transparent !important;
+  padding: 15px 0 0 30px;
+  div {
+    ul {
+      width: 100%;
+      text-transform: capitalize;
+      li {
+        background-color: var(--info);
+        padding: 2px 14px;
+        text-align: center;
+        width: 14%;
+        margin-right: 20px;
+        margin-top: 10px;
+        a {
+          color: var(--dark) !important;
+        }
+      }
+
+    }
   }
 }
+/*=====  End: styles of Navbar  ======*/
+
+
+
+
+/*=============================================
+=            Begin: style of Top            =
+=============================================*/
+.top {
+  margin-bottom: 30px;
+  .container-fluid {
+    .row {
+      .col-lg-3 {
+        padding: 20px;
+        img {
+          width: 110px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+/*=====  End: styles of Top  ======*/
+
+
+
+
+/*=============================================
+=            Begin: Gallery of Images        =
+=============================================*/
+.galleryImages {
+  margin-bottom: 30px;
+  .container-fluid {
+    .imagesRivers {
+      width: 122.4%;
+      .col-lg-2 {
+        padding: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/*=====  End: Gallery of Images  ======*/
+
+
+
+/*=============================================
+=            Begin: Articles        =
+=============================================*/
+.articles {
+  .container-fluid {
+    .row {
+      margin-bottom: 70px;
+      .col-lg-6 {
+        .row {
+          border-bottom: 1px solid $graylight;
+          margin: 0;
+          .col-lg-4 {
+            padding: 0;
+            img {
+              max-width: 230px;
+            }
+          }
+          .col-lg-8 {
+            padding: 0;
+            h2 {
+              text-transform: capitalize;
+            }
+            p {
+              margin-bottom: 40px;
+            }
+            button {
+              text-transform: capitalize;
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/*=====  End: Articles  ======*/
+
+
+
+
+
+
+
+
