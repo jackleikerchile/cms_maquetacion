@@ -26,6 +26,7 @@ p {
 .galleryTitle {
   border-bottom: 1px solid $graylight;
   margin-bottom: 65px;
+  margin-top: 30px;
   border-top: 1px solid $graylight;
 }
 
@@ -148,16 +149,241 @@ h1 {
     }
   }
 }
-
-
-
-
-
-
 /*=====  End: Articles  ======*/
 
 
 
+
+
+/*=============================================
+=            Begin: Contacts        =
+=============================================*/
+.contacts {
+  .container-fluid {
+    .row {
+      .col-lg-6 {
+        padding: 0;
+        .jumbotron {
+          margin-bottom: 0;
+          .contactsDirection {
+            width: 390px;
+            height: 0;
+            font-weight: bold;
+            float: right;
+            font-size: 18px;
+            color: var(--blue);
+            i {
+              margin-bottom: 22px;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+      .contactsStyles {
+        padding: 0;
+        background-color: var(--blue);
+        .row {
+          margin-top: 80px;
+          a {
+            span {
+              color: var(--dark);
+              font-size: 30px;
+            }
+          }
+          .col-lg-12 {
+            form {
+              button {
+                margin-left: 15px;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*=====  End: Contacts  ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================================
+=      Begin: Media Moviles Responsive  =
+=============================================*/
+
+
+//------------ Small Device (Telefonos 576 px y mas...!)-------------- //
+
+@include media-breakpoint-only (sm) {
+
+}
+
+
+
+//------------ Medium devices (Tablets, min-width: 768px and max-width: 991.98...!)------------- //
+
+@include media-breakpoint-only (md) {
+// Globales en table media moviles //
+h3 {
+  font-size: 1.55rem;
+}
+
+
+// Begin: NavBar //
+  nav {
+    width: 100%;
+    display: inline-block !important;
+    padding: 15px 0 0 0 !important;
+    a {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+    div {
+      .navbar-nav {
+        justify-content: center !important;
+        li {
+          padding: 0;
+          margin-right: 16px;
+          width: 17%;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+
+// Begin: slideShow // 
+.slideShow {
+  .row {
+    div {
+      ul {
+        .slideCaption {
+          position: relative !important;
+          top: -78px !important;
+        }
+      }
+    }
+  }
+}
+
+// Begin: Articles //
+.articles {
+  .container-fluid {
+    .row {
+      .col-lg-6 {
+        margin-bottom: 55px;
+        .row {
+          .col-md-5 {
+            img {
+              max-width: 290px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Begin: Video //
+.video {
+  .container-fluid {
+    .row {
+      .col-md-6 {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+
+
+}
+
+
+/*---------- Large devices (min-width : 992px and max-width: 1199.98px...!)------------ */
+@include media-breakpoint-only (lg) {
+  // Begin: Navbar //
+  .bg-dark {
+    padding: 15px 0 0 10px;
+    a {
+      img {
+        max-width: 240px;
+      }
+    }
+    div {
+      ul {
+        li {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  // Begin: Articles //
+
+  .articles {
+    .container-fluid {
+      .row {
+        .col-lg-6 {
+          .row {
+            .col-lg-4 {
+              img {
+                max-width: 100%;
+              }
+            }
+            .col-lg-8 {
+              padding-left: 20px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
+
+//--------------- Extra large devices (large desktop, 1200px y mas...!) ----------------- //
+
+@include media-breakpoint-only (xl) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====  End: Media Moviles Responsive  ======*/
 
 
 

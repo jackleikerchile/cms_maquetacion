@@ -97,18 +97,45 @@ setInterval(function(){
 
 
 
+
 /*=============================================
 Google Maps          
 =============================================*/
+function initMap() {
 
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	const ubicacion = new localizacion(()=>{
+
+		const myLatLng = {lat: ubicacion.latitude, lng: ubicacion.longitude};
+
+		var texto = '<h1> calle nueva 141 </h1>' + '<p> calle nueva 141, dpt 611, la comuna florida </p>' + '<a href="https://wwww.google.com">Pagina web</a>';
+
+		const options = {
+			center: myLatLng,
+			
+			zoom: 14
+		}
+
+		var map = document.getElementById('map');
+
+		const mapa = new google.maps.Map(map, options);
+
+		const marcador = new google.maps.Marker({
+			position: myLatLng,
+			map: mapa,
+			title: "Calle Nueva 141"
+		});
+
+		var informacion = new google.maps.InfoWindow({
+			content: texto
+		});
+
+		marcador.addListener('click', function(){
+			informacion.open(mapa, marcador);
+		});
+
+
+
+});
+
 }
-
-
-
 /*=====  Fin de Google Maps  ======*/

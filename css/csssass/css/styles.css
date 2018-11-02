@@ -6496,6 +6496,7 @@ p {
 .galleryTitle {
   border-bottom: 1px solid #ccc;
   margin-bottom: 65px;
+  margin-top: 30px;
   border-top: 1px solid #ccc; }
 
 h1 {
@@ -6571,5 +6572,84 @@ h1 {
         margin-bottom: 30px; }
 
 /*=====  End: Articles  ======*/
+/*=============================================
+=            Begin: Contacts        =
+=============================================*/
+.contacts .container-fluid .row .col-lg-6 {
+  padding: 0; }
+  .contacts .container-fluid .row .col-lg-6 .jumbotron {
+    margin-bottom: 0; }
+    .contacts .container-fluid .row .col-lg-6 .jumbotron .contactsDirection {
+      width: 390px;
+      height: 0;
+      font-weight: bold;
+      float: right;
+      font-size: 18px;
+      color: var(--blue); }
+      .contacts .container-fluid .row .col-lg-6 .jumbotron .contactsDirection i {
+        margin-bottom: 22px;
+        text-transform: capitalize; }
+.contacts .container-fluid .row .contactsStyles {
+  padding: 0;
+  background-color: var(--blue); }
+  .contacts .container-fluid .row .contactsStyles .row {
+    margin-top: 80px; }
+    .contacts .container-fluid .row .contactsStyles .row a span {
+      color: var(--dark);
+      font-size: 30px; }
+    .contacts .container-fluid .row .contactsStyles .row .col-lg-12 form button {
+      margin-left: 15px;
+      text-transform: capitalize; }
+
+/*=====  End: Contacts  ======*/
+/*=============================================
+=      Begin: Media Moviles Responsive  =
+=============================================*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h3 {
+    font-size: 1.55rem; }
+
+  nav {
+    width: 100%;
+    display: inline-block !important;
+    padding: 15px 0 0 0 !important; }
+    nav a {
+      width: 100%;
+      text-align: center;
+      margin: 0; }
+    nav div .navbar-nav {
+      justify-content: center !important; }
+      nav div .navbar-nav li {
+        padding: 0;
+        margin-right: 16px;
+        width: 17%; }
+        nav div .navbar-nav li a {
+          font-size: 14px; }
+
+  .slideShow .row div ul .slideCaption {
+    position: relative !important;
+    top: -78px !important; }
+
+  .articles .container-fluid .row .col-lg-6 {
+    margin-bottom: 55px; }
+    .articles .container-fluid .row .col-lg-6 .row .col-md-5 img {
+      max-width: 290px; }
+
+  .video .container-fluid .row .col-md-6 {
+    padding-bottom: 40px; } }
+/*---------- Large devices (min-width : 992px and max-width: 1199.98px...!)------------ */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bg-dark {
+    padding: 15px 0 0 10px; }
+    .bg-dark a img {
+      max-width: 240px; }
+    .bg-dark div ul li {
+      padding: 0; }
+
+  .articles .container-fluid .row .col-lg-6 .row .col-lg-4 img {
+    max-width: 100%; }
+  .articles .container-fluid .row .col-lg-6 .row .col-lg-8 {
+    padding-left: 20px; } }
+/*=====  End: Media Moviles Responsive  ======*/
 
 /*# sourceMappingURL=styles.css.map */
