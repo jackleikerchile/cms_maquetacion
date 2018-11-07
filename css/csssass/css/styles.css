@@ -6541,8 +6541,8 @@ h1 {
 =============================================*/
 .galleryImages {
   margin-bottom: 30px; }
-  .galleryImages .container-fluid .imagesRivers {
-    width: 122.4%; }
+  .galleryImages .container-fluid {
+    padding: 0; }
     .galleryImages .container-fluid .imagesRivers .col-lg-2 {
       padding: 0; }
       .galleryImages .container-fluid .imagesRivers .col-lg-2 img {
@@ -6605,7 +6605,89 @@ h1 {
 /*=============================================
 =      Begin: Media Moviles Responsive  =
 =============================================*/
+/*/-------------------- Extra Small devices (Portrait phones, less than 576px)/*/
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.2rem; }
+
+  .logohiddenPhone {
+    display: none !important; }
+
+  .logoHiddenAllDevices {
+    width: 100%;
+    padding: 14px; }
+    .logoHiddenAllDevices img {
+      max-width: 260px; }
+
+  .bg-dark {
+    background-color: var(--dark) !important;
+    padding: 0.5rem 1rem !important; }
+    .bg-dark div ul li {
+      background-color: transparent;
+      text-align: left;
+      width: 100%;
+      margin-right: 0; }
+      .bg-dark div ul li a {
+        color: #ccc !important; }
+
+  .slideShow {
+    margin: 0 !important; }
+
+  div .arrows {
+    font-size: 20px !important;
+    position: absolute;
+    top: 28% !important; }
+
+  .slideCaption {
+    visibility: hidden !important; }
+
+  .top .container-fluid .row .col-md-6 img {
+    width: 90px; }
+
+  .galleryImages .container-fluid .imagesRivers .imageRiversMovil {
+    width: 50%; }
+
+  .articles .container-fluid .row .col-lg-6 .row .col-md-5 img {
+    max-width: 100%; } }
+/*/------------ Small Device (Phones 576 px and up...!)-------------- /*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logoHiddenAllDevices {
+    width: 100%;
+    padding: 14px;
+    text-align: center; }
+
+  .logohiddenPhone {
+    display: none !important; }
+
+  .bg-dark {
+    background-color: var(--dark) !important;
+    padding: 0.5rem 1rem !important; }
+    .bg-dark div ul li {
+      background-color: transparent;
+      text-align: left;
+      width: 100%;
+      margin-right: 0; }
+      .bg-dark div ul li a {
+        color: #ccc !important; }
+
+  .slideShow {
+    margin: 0 !important; }
+
+  div .arrows {
+    font-size: 30px !important;
+    position: absolute;
+    top: 28% !important; }
+
+  .slideCaption {
+    visibility: hidden !important; }
+
+  .galleryImages .container-fluid .imagesRivers .imageRiversMovil {
+    width: 50%; } }
+/*/------------ Medium devices (Tablets, 768px and up...!)------------- /*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .logoHiddenAllDevices {
+    display: none; }
+
   h3 {
     font-size: 1.55rem; }
 
@@ -6618,7 +6700,8 @@ h1 {
       text-align: center;
       margin: 0; }
     nav div .navbar-nav {
-      justify-content: center !important; }
+      justify-content: center !important;
+      padding-left: 17px !important; }
       nav div .navbar-nav li {
         padding: 0;
         margin-right: 16px;
@@ -6637,8 +6720,11 @@ h1 {
 
   .video .container-fluid .row .col-md-6 {
     padding-bottom: 40px; } }
-/*---------- Large devices (min-width : 992px and max-width: 1199.98px...!)------------ */
+/*---------- Large devices (desktops 992 px and up...!)------------ */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .logoHiddenAllDevices {
+    display: none; }
+
   .bg-dark {
     padding: 15px 0 0 10px; }
     .bg-dark a img {
@@ -6650,6 +6736,9 @@ h1 {
     max-width: 100%; }
   .articles .container-fluid .row .col-lg-6 .row .col-lg-8 {
     padding-left: 20px; } }
+@media (min-width: 1200px) {
+  .logoHiddenAllDevices {
+    display: none; } }
 /*=====  End: Media Moviles Responsive  ======*/
 
 /*# sourceMappingURL=styles.css.map */

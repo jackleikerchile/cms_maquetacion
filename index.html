@@ -13,32 +13,32 @@
 <!--/*=============================================
 =            Begin: Navbar            =
 =============================================*/-->
+<a class="navbar-brand logoHiddenAllDevices text-center" href="#"><img src="img/logotipo.png" alt="" class="img-responsive"></a>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#"><img src="img/logotipo.png" alt="" class="img-responsive"></a>
+  <a class="navbar-brand logohiddenPhone" href="#"><img src="img/logotipo.png" alt="" class="img-responsive"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="#">noticias</a>
+        <a class="nav-link" href="#" onclick="$('#top').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'});">noticias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">galeria</a>
+        <a class="nav-link" href="#" onclick="$('#galleryImages').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'})">galeria</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">articulos</a>
+        <a class="nav-link" href="#" onclick="$('#articles').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'})">articulos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">videos</a>
+        <a class="nav-link" href="#" onclick="$('#video').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'})">videos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">contactenos</a>
+        <a class="nav-link" href="#" onclick="$('#contacts').animatescroll({scrollSpeed:2000,easing:'easeOutQuart'})">contactenos</a>
       </li>    
     </ul>
   </div>  
 </nav>
-
 <!--/*=====  End: Navbar  ======*/-->
 
 
@@ -91,8 +91,8 @@
 				<li role-slide = "4"><span class="fa fa-circle carrouselCircle"></span></li>
 			</ol>
 
-			<div id="slideIzq"><span class="fa fa-chevron-left"></span></div>
-			<div id="slideDer"><span class="fa fa-chevron-right"></span></div>
+			<div id="slideIzq"><span class="fa fa-chevron-left arrows"></span></div>
+			<div id="slideDer"><span class="fa fa-chevron-right arrows"></span></div>
 		</div>
 	</div>
 </div>
@@ -103,7 +103,7 @@
 <!--/*=============================================
 =            Begin: Top            =
 =============================================*/-->
-<div class="top">
+<div id="top" class="top">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-3 col-md-6 text-center">
@@ -136,7 +136,7 @@
 <!--/*=============================================
 =            Begin: Gallery of Images            =
 =============================================*/-->
-<div class="galleryImages">
+<div id="galleryImages" class="galleryImages">
 	<div class="container-fluid">
 		<div class="row galleryTitle">
 			<div class="col-lg-12 text-center">
@@ -144,37 +144,41 @@
 			</div>
 		</div>
 		<div class="row imagesRivers">
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo01.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo02.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo03.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo04.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo01.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
-		</div>
-		<div class="row imagesRivers">
-			<div class="col-lg-2 col-md-2">
-				<img src="img/galeria/photo04.JPG" alt="imagesCascade" class="img-responsive">
-			</div>
-			<div class="col-lg-2 col-md-2">
-				<img src="img/galeria/photo03.JPG" alt="imagesCascade" class="img-responsive">
-			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo02.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
+				<img src="img/galeria/photo04.JPG" alt="imagesCascade" class="img-responsive">
+			</div>
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
+				<img src="img/galeria/photo03.JPG" alt="imagesCascade" class="img-responsive">
+			</div>
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
+				<img src="img/galeria/photo02.JPG" alt="imagesCascade" class="img-responsive">
+			</div>
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo01.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
-			<div class="col-lg-2 col-md-2">
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
 				<img src="img/galeria/photo04.JPG" alt="imagesCascade" class="img-responsive">
+			</div>
+			<div class="col-lg-2 col-md-2 imageRiversMovil">
+				<img src="img/galeria/photo03.JPG" alt="imagesCascade" class="img-responsive">
 			</div>
 		</div>
 	</div>
@@ -187,7 +191,7 @@
 <!--/*=============================================
 =            Begin: Articles of interest        =
 =============================================*/-->
-<div class="articles">
+<div id="articles" class="articles">
 	<div class="container-fluid">
 		<div class="row galleryTitle">
 			<div class="col-lg-12 text-center">
@@ -197,10 +201,10 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="row">
-					<div class="col-lg-4 col-md-5">
+					<div class="col-xl-4 col-lg-4 col-md-5">
 						<img src="img/articulos/landscape01.jpg" alt="placeTheWord" class="img-responsive img-thumbnail">
 					</div>
-					<div class="col-lg-8 col-md-7">
+					<div class="col-xl-8 col-lg-8 col-md-7">
 						<h2>lorem ipsum</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						<button type="button" class="btn btn-outline-secondary">leer más</button>
@@ -209,10 +213,10 @@
 			</div>
 			<div class="col-lg-6">
 				<div class="row">
-					<div class="col-lg-4 col-md-5">
+					<div class="col-xl-4 col-lg-4 col-md-5">
 						<img src="img/articulos/landscape02.jpg" alt="placeTheWord" class="img-responsive img-thumbnail">
 					</div>
-					<div class="col-lg-8 col-md-7">
+					<div class="col-xl-8 col-lg-8 col-md-7">
 						<h2>lorem ipsum</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						<button type="button" class="btn btn-outline-secondary">leer más</button>
@@ -223,10 +227,10 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="row">
-					<div class="col-lg-4 col-md-5">
+					<div class="col-xl-4 col-lg-4 col-md-5">
 						<img src="img/articulos/landscape03.jpg" alt="placeTheWord" class="img-responsive img-thumbnail">
 					</div>
-					<div class="col-lg-8 col-md-7">
+					<div class="col-xl-8 col-lg-8 col-md-7">
 						<h2>lorem ipsum</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						<button type="button" class="btn btn-outline-secondary">leer más</button>
@@ -235,10 +239,10 @@
 			</div>
 			<div class="col-lg-6">
 				<div class="row">
-					<div class="col-lg-4 col-md-5">
+					<div class="col-xl-4 col-lg-4 col-md-5">
 						<img src="img/articulos/landscape04.jpg" alt="placeTheWord" class="img-responsive img-thumbnail">
 					</div>
-					<div class="col-lg-8 col-md-7">
+					<div class="col-xl-8 col-lg-8 col-md-7">
 						<h2>lorem ipsum</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						<button type="button" class="btn btn-outline-secondary">leer más</button>
@@ -256,7 +260,7 @@
 <!--/*=============================================
 =            Begin: Video        =
 =============================================*/-->
-<div class="video">
+<div id="video" class="video">
 	<div class="container-fluid">
 		<div class="row galleryTitle">
 			<div class="col-lg-12 text-center">
@@ -293,7 +297,7 @@
 <!--/*=============================================
 =            Begin: Contacts       =
 =============================================*/-->
-<div class="contacts">
+<div id="contacts" class="contacts">
 	<div class="container-fluid">
 		<div class="row galleryTitle">
 			<div class="col-lg-12 text-center">
@@ -378,6 +382,7 @@
 <script src="bootstrap/dist/js/bootstrap.js"></script>
 <script src="js/script.js"></script>
 <script src="js/localitation.js"></script>
+<<script src="plugins/animatescroll.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2Jq2XcQh5KY0KEHNyotlHvyAFHSWUyow&callback=initMap" async defer></script>
 
 </body>

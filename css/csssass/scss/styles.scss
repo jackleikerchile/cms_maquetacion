@@ -11,6 +11,7 @@ $graylight: #ccc;
 
 
 
+
 // Import all styles of bootstrap //
 @import "./../../../bootstrap/scss/bootstrap";
 
@@ -99,8 +100,8 @@ h1 {
 .galleryImages {
   margin-bottom: 30px;
   .container-fluid {
+    padding: 0;
     .imagesRivers {
-      width: 122.4%;
       .col-lg-2 {
         padding: 0;
         img {
@@ -227,22 +228,194 @@ h1 {
 =      Begin: Media Moviles Responsive  =
 =============================================*/
 
+/*/-------------------- Extra Small devices (Portrait phones, less than 576px)/*/
 
-//------------ Small Device (Telefonos 576 px y mas...!)-------------- //
+@include media-breakpoint-only (xs) {
+// Globales en table media moviles //
+h1 {
+  font-size: 2.2rem;
+}
 
-@include media-breakpoint-only (sm) {
+.logohiddenPhone {
+  display: none !important;
+}
+
+.logoHiddenAllDevices {
+  width: 100%;
+  padding: 14px;
+  img {
+    max-width: 260px;
+  }
+}
+
+
+// Begin: NavBar //
+.bg-dark {
+  background-color: var(--dark) !important;
+  padding: 0.5rem 1rem !important;
+  div {
+    ul {
+      li {
+        background-color: transparent;
+        text-align: left;
+        width: 100%;
+        margin-right: 0;
+        a {
+          color: $graylight !important;
+        }
+      }
+    }
+  }
+}
+
+// Begin: slideShow //
+  .slideShow {
+    margin: 0 !important;
+  }
+
+  div {
+    .arrows {
+      font-size: 20px !important;
+      position: absolute;
+      top: 28% !important;
+    }
+  }
+
+  .slideCaption {
+    @include invisible(hidden);
+  }
+
+// Begin: Top //
+
+.top {
+  .container-fluid {
+    .row {
+      .col-md-6 {
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+}
+
+
+// Begin: Gallery //
+.galleryImages {
+  .container-fluid {
+    .imagesRivers {
+      .imageRiversMovil {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// Begin: Articles //
+
+.articles {
+  .container-fluid {
+    .row {
+      .col-lg-6 {
+        .row {
+          .col-md-5 {
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 }
 
 
 
-//------------ Medium devices (Tablets, min-width: 768px and max-width: 991.98...!)------------- //
+/*/------------ Small Device (Phones 576 px and up...!)-------------- /*/
+
+@include media-breakpoint-only (sm) {
+// Globales en table media moviles //
+
+// Begin: NavBar //
+.logoHiddenAllDevices {
+  width: 100%;
+  padding: 14px;
+  text-align: center;
+}
+  .logohiddenPhone {
+    display: none !important;
+  }
+
+  .bg-dark {
+    background-color: var(--dark) !important;
+    padding: 0.5rem 1rem !important;
+    div {
+      ul {
+        li {
+          background-color: transparent;
+          text-align: left;
+          width: 100%;
+          margin-right: 0;
+          a {
+            color: $graylight !important;
+          }
+        }
+      }
+    }
+  }
+
+
+
+// Begin: slideShow //
+  .slideShow {
+    margin: 0 !important;
+  }
+
+  div {
+    .arrows {
+      font-size: 30px !important;
+      position: absolute;
+      top: 28% !important;
+    }
+  }
+
+  .slideCaption {
+    @include invisible(hidden);
+  }
+
+// Begin: Gallery //
+.galleryImages {
+  .container-fluid {
+    .imagesRivers {
+      .imageRiversMovil {
+        width: 50%;
+      }
+    }
+  }
+}
+
+
+}
+
+
+
+
+/*/------------ Medium devices (Tablets, 768px and up...!)------------- /*/
 
 @include media-breakpoint-only (md) {
 // Globales en table media moviles //
+.logoHiddenAllDevices {
+  display: none;
+}
+
 h3 {
   font-size: 1.55rem;
 }
+
 
 
 // Begin: NavBar //
@@ -258,6 +431,7 @@ h3 {
     div {
       .navbar-nav {
         justify-content: center !important;
+        padding-left: 17px !important;
         li {
           padding: 0;
           margin-right: 16px;
@@ -319,8 +493,17 @@ h3 {
 }
 
 
-/*---------- Large devices (min-width : 992px and max-width: 1199.98px...!)------------ */
+
+
+/*---------- Large devices (desktops 992 px and up...!)------------ */
+
 @include media-breakpoint-only (lg) {
+// Globales en table media moviles //
+.logoHiddenAllDevices {
+  display: none;
+}
+
+
   // Begin: Navbar //
   .bg-dark {
     padding: 15px 0 0 10px;
@@ -337,6 +520,7 @@ h3 {
       }
     }
   }
+
 
   // Begin: Articles //
 
@@ -366,9 +550,15 @@ h3 {
 }
 
 
-//--------------- Extra large devices (large desktop, 1200px y mas...!) ----------------- //
+//--------------- Extra large devices (large desktop, 1200px and up...!) ----------------- //
 
 @include media-breakpoint-only (xl) {
+// Globales en table media moviles //
+
+.logoHiddenAllDevices {
+  display: none;
+}
+
 
 }
 
