@@ -1,0 +1,103 @@
+// Variable of bootstrap //
+$theme-colors: (
+  "primary": #007bff,
+  "danger": #ff4136
+);
+
+
+
+// Colors //
+$rgbaBlue: rgba(0, 0, 150, 1);
+$rgbaBlueLight: rgba(0, 100, 200, 1);
+
+
+
+
+
+// Cuando son carpetas relativa se colocan 3/ 6puntos y despues localizamos la carpeta raiz. //
+/* Import all styles of bootstrap */
+@import "./../../../bootstrap/scss/bootstrap";
+
+/* Import all styles of fontawesom */
+@import "./../../../plugins/fontawesome/scss/fontawesome.scss";
+@import "./../../../plugins/fontawesome/scss/solid.scss";
+@import "./../../../plugins/fontawesome/scss/brands.scss";
+
+.external-link-alt {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-external-link-alt);
+  }
+}
+
+
+
+
+/*=============================================
+=                  Begin: login               =
+===============================================*/
+.login {
+	background:linear-gradient($rgbaBlue, $rgbaBlueLight);
+	position: relative;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	.container {
+		.col-lg-12 {
+			width: 350px;
+			margin: 0 auto;
+		    background-color: gray("400");
+		    padding-top: 20px;
+		    padding-bottom: 20px;
+			-webkit-border-radius: 6px 6px 6px 6px;
+			border-radius: 6px 6px 6px 6px;
+			box-shadow: 0 0 10px var(--dark);
+			form {
+				h6 {
+				    color: var(--white);
+				    background-color: var(--dark);
+				    text-transform: uppercase;
+				    padding: 16px 7px 16px 7px;
+				}
+				button {
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}
+
+
+
+/*===========  End of login  ==============*/
+
+
+
+
+/*=============================================
+=                  Begin: Inicio               =
+===============================================*/
+.inicio {
+	.container-fluid {
+		.row {
+			.col-lg-2 {
+				background-color: var(--dark);
+				height: 100vh;
+				padding: 0;
+				img {
+				    margin: 20px 0 20px 0;
+				    max-width: 234px;
+				    background-color: var(--white);
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/*===========  End of Inicio  ==============*/

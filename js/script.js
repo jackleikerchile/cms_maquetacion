@@ -139,3 +139,19 @@ function initMap() {
 
 }
 /*=====  Fin de Google Maps  ======*/
+
+
+/*================================
+=            Begin: scrollUp   =
+================================*/
+
+$(function(){
+  $.scrollUp({
+  	scrollImg: true
+  });
+});
+
+
+
+/*=====  End of scrollUp  ======*/
+

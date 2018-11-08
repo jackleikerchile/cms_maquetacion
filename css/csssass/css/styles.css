@@ -6603,6 +6603,15 @@ h1 {
 
 /*=====  End: Contacts  ======*/
 /*=============================================
+=            Begin: ArticlesModal        =
+=============================================*/
+.modal .modal-dialog .modal-content .modal-body img {
+  width: 100%; }
+.modal .modal-dialog .modal-content .modal-body p {
+  margin-top: 20px; }
+
+/*=====  End: ArticlesModal  ======*/
+/*=============================================
 =      Begin: Media Moviles Responsive  =
 =============================================*/
 /*/-------------------- Extra Small devices (Portrait phones, less than 576px)/*/
