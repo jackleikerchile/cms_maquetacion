@@ -6500,6 +6500,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa,
 .fas,
 .external-link-alt,
+.angle-down,
 .far,
 .fal,
 .fab {
@@ -6511,7 +6512,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-rendering: auto;
   line-height: 1; }
 
-.external-link-alt {
+.external-link-alt, .angle-down {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -6594,6 +6595,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa.fa-pull-left,
 .fas.fa-pull-left,
 .fa-pull-left.external-link-alt,
+.fa-pull-left.angle-down,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -6601,6 +6603,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .fa-pull-right.external-link-alt,
+.fa-pull-right.angle-down,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -10481,7 +10484,8 @@ readers do not read off random characters that represent icons */
   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 .fa,
 .fas,
-.external-link-alt {
+.external-link-alt,
+.angle-down {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -10498,8 +10502,17 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
-.external-link-alt:before {
-  content: ""; }
+.external-link-alt {
+  float: left;
+  font-size: 15px;
+  line-height: 1.5rem; }
+  .external-link-alt:before {
+    content: ""; }
+
+.angle-down:before {
+  content: "";
+  font-size: 1.2em;
+  cursor: pointer; }
 
 /*=============================================
 =                  Begin: login               =
@@ -10531,14 +10544,61 @@ readers do not read off random characters that represent icons */
 /*=============================================
 =                  Begin: Inicio               =
 ===============================================*/
-.inicio .container-fluid .row .col-lg-2 {
+.inicio .container-fluid .row .MenuLogo {
   background-color: var(--dark);
   height: 100vh;
   padding: 0; }
-  .inicio .container-fluid .row .col-lg-2 img {
+  .inicio .container-fluid .row .MenuLogo img {
     margin: 20px 0 20px 0;
     max-width: 234px;
     background-color: var(--white); }
+  .inicio .container-fluid .row .MenuLogo ul li a {
+    text-transform: capitalize; }
+    .inicio .container-fluid .row .MenuLogo ul li a:hover {
+      background-color: var(--light); }
+.inicio .container-fluid .row .col-lg-10 .userMenu {
+  padding: 20px 0;
+  background-color: var(--white);
+  -webkit-box-shadow: 0 12px 10px 0 var(--gray-dark);
+  box-shadow: 0 2px 10px 0 var(--gray-dark); }
+  .inicio .container-fluid .row .col-lg-10 .userMenu .col-lg-2 a {
+    text-decoration: none; }
+    .inicio .container-fluid .row .col-lg-10 .userMenu .col-lg-2 a span {
+      font-size: 1.2em; }
+      .inicio .container-fluid .row .col-lg-10 .userMenu .col-lg-2 a span .fa-circle {
+        color: var(--dark); }
+      .inicio .container-fluid .row .col-lg-10 .userMenu .col-lg-2 a span span {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        background-color: #ff6347;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 0.7em;
+        text-align: center;
+        line-height: 1.2em;
+        color: var(--white); }
+  .inicio .container-fluid .row .col-lg-10 .userMenu .col-lg-8 p {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 12px; }
+  .inicio .container-fluid .row .col-lg-10 .userMenu .userMenber {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .inicio .container-fluid .row .col-lg-10 .userMenu .userMenber img {
+      max-width: 40px; }
+    .inicio .container-fluid .row .col-lg-10 .userMenu .userMenber p {
+      margin: 0;
+      text-transform: capitalize;
+      margin-left: 12px; }
+.inicio .container-fluid .row .col-lg-10 .row .jumbotron {
+  width: 100%;
+  position: absolute;
+  z-index: -1; }
 
 /*===========  End of Inicio  ==============*/
 

@@ -9,6 +9,7 @@ $theme-colors: (
 // Colors //
 $rgbaBlue: rgba(0, 0, 150, 1);
 $rgbaBlueLight: rgba(0, 100, 200, 1);
+$ColorTomate: #ff6347;
 
 
 
@@ -23,14 +24,34 @@ $rgbaBlueLight: rgba(0, 100, 200, 1);
 @import "./../../../plugins/fontawesome/scss/solid.scss";
 @import "./../../../plugins/fontawesome/scss/brands.scss";
 
+
+
+
+
 .external-link-alt {
   @extend %fa-icon;
   @extend .fas;
+
+	float: left;
+	font-size: 15px;
+	line-height: 1.5rem;
 
   &:before {
     content: fa-content($fa-var-external-link-alt);
   }
 }
+
+.angle-down {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-angle-down);
+	    font-size: 1.2em;
+	    cursor: pointer;
+	}
+}
+
 
 
 
@@ -82,7 +103,7 @@ $rgbaBlueLight: rgba(0, 100, 200, 1);
 .inicio {
 	.container-fluid {
 		.row {
-			.col-lg-2 {
+			.MenuLogo {
 				background-color: var(--dark);
 				height: 100vh;
 				padding: 0;
@@ -90,6 +111,77 @@ $rgbaBlueLight: rgba(0, 100, 200, 1);
 				    margin: 20px 0 20px 0;
 				    max-width: 234px;
 				    background-color: var(--white);
+				}
+				ul {
+					li {
+						a {
+							text-transform: capitalize;
+							&:hover {
+								background-color: var(--light);
+							}
+						}
+					}
+				}
+			}
+			.col-lg-10 {
+				.userMenu {
+					padding: 20px 0;
+					background-color: var(--white);
+					-webkit-box-shadow: 0 12px 10px 0 var(--gray-dark);
+					box-shadow: 0 2px 10px 0 var(--gray-dark);
+					.col-lg-2 {
+						a {
+							text-decoration: none;
+							span {
+								font-size: 1.2em;
+								.fa-circle {
+									color: var(--dark)
+								}
+								span {
+								    position: absolute;
+								    top: 0px;
+								    right: 0;
+								    background-color: $ColorTomate;
+								    width: 20px;
+								    height: 20px;
+								    border-radius: 50%;
+								    font-size: 0.7em;
+								    text-align: center;
+								    line-height: 1.2em;
+								    color: var(--white);
+								}
+							}
+						}
+					}
+					.col-lg-8 {
+						p {
+						    width: 300px;
+						    margin: 0 auto;
+						    text-align: center;
+						    text-transform: capitalize;
+						    font-size: 12px;
+						}
+					}
+					.userMenber {
+					    display: flex;
+					    align-items: center;
+					    justify-content: flex-end;
+					    img {
+					    	max-width: 40px;
+					    }
+					    p {
+					    	margin: 0;
+					    	text-transform: capitalize;
+					        margin-left: 12px;
+					    }
+					}
+				}
+				.row {
+					.jumbotron {
+						width: 100%;
+						position: absolute;
+						z-index: -1;
+					}
 				}
 			}
 		}
