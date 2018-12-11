@@ -23,7 +23,7 @@ $ColorTomate: #ff6347;
 @import "./../../../plugins/fontawesome/scss/fontawesome.scss";
 @import "./../../../plugins/fontawesome/scss/solid.scss";
 @import "./../../../plugins/fontawesome/scss/brands.scss";
-
+@import "./../../../plugins/fontawesome/scss/regular.scss";
 
 
 
@@ -51,6 +51,60 @@ $ColorTomate: #ff6347;
 	    cursor: pointer;
 	}
 }
+
+
+
+
+
+
+// Icons of botones of colors navigator //
+.play-circle {
+	@extend %fa-icon;
+	@extend .far;
+
+	&:before {
+		content: fa-content($fa-var-play-circle);
+	}
+}
+
+
+.file-alt {
+	@extend %fa-icon;
+	@extend .far;
+
+	&:before {
+		content: fa-content($fa-var-file-alt);
+	}
+}
+
+
+.image {
+	@extend %fa-icon;
+	@extend .far;
+
+	&:before {
+		content: fa-content($fa-var-image);
+	}
+}
+
+.film {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-film);
+	}
+}
+
+.users {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-users);
+	}
+}
+
 
 
 
@@ -105,7 +159,7 @@ $ColorTomate: #ff6347;
 		.row {
 			.MenuLogo {
 				background-color: var(--dark);
-				height: 100vh;
+				height: 150vh;
 				padding: 0;
 				img {
 				    margin: 20px 0 20px 0;
@@ -176,18 +230,49 @@ $ColorTomate: #ff6347;
 					    }
 					}
 				}
-				.row {
+				.jumbotronWelcome {
+					border-bottom: 1px solid gray("200");
 					.jumbotron {
 						width: 100%;
-						position: absolute;
 						z-index: -1;
+						.container {
+							text-transform: capitalize;
+						}
+					}
+				}
+				.botonesForNavigator {
+					margin-top: 35px;
+					a {
+					    margin-left: 70px;
+					    padding-top: 60px;
+					    max-width: 150px;
+					    max-height: 150px;
+					    padding-bottom: 70px;
+						i {
+							font-size: 40px;
+							color: var(--white);
+						}
+					}
+					.botonSlide {
+						background-color: var(--success);
+					}
+					.botonFile {
+						background-color: var(--purple);
+					}
+					.botonImage {
+						background-color: var(--info);
+					}
+					.botonFilm {
+						background-color: var(--blue);
+					}
+					.botonUsers {
+						background-color: var(--red);
 					}
 				}
 			}
 		}
 	}
 }
-
 
 
 

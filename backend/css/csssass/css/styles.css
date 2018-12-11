@@ -6501,7 +6501,12 @@ a.text-dark:hover, a.text-dark:focus {
 .fas,
 .external-link-alt,
 .angle-down,
+.film,
+.users,
 .far,
+.play-circle,
+.file-alt,
+.image,
 .fal,
 .fab {
   -moz-osx-font-smoothing: grayscale;
@@ -6512,7 +6517,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-rendering: auto;
   line-height: 1; }
 
-.external-link-alt, .angle-down {
+.external-link-alt, .angle-down, .play-circle, .file-alt, .image, .film, .users {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -6596,7 +6601,12 @@ a.text-dark:hover, a.text-dark:focus {
 .fas.fa-pull-left,
 .fa-pull-left.external-link-alt,
 .fa-pull-left.angle-down,
+.fa-pull-left.film,
+.fa-pull-left.users,
 .far.fa-pull-left,
+.fa-pull-left.play-circle,
+.fa-pull-left.file-alt,
+.fa-pull-left.image,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
   margin-right: .3em; }
@@ -6604,7 +6614,12 @@ a.text-dark:hover, a.text-dark:focus {
 .fas.fa-pull-right,
 .fa-pull-right.external-link-alt,
 .fa-pull-right.angle-down,
+.fa-pull-right.film,
+.fa-pull-right.users,
 .far.fa-pull-right,
+.fa-pull-right.play-circle,
+.fa-pull-right.file-alt,
+.fa-pull-right.image,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
   margin-left: .3em; }
@@ -10485,7 +10500,9 @@ readers do not read off random characters that represent icons */
 .fa,
 .fas,
 .external-link-alt,
-.angle-down {
+.angle-down,
+.film,
+.users {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -10502,6 +10519,20 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
+/*!
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+.far, .play-circle, .file-alt, .image {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
 .external-link-alt {
   float: left;
   font-size: 15px;
@@ -10513,6 +10544,21 @@ readers do not read off random characters that represent icons */
   content: "";
   font-size: 1.2em;
   cursor: pointer; }
+
+.play-circle:before {
+  content: ""; }
+
+.file-alt:before {
+  content: ""; }
+
+.image:before {
+  content: ""; }
+
+.film:before {
+  content: ""; }
+
+.users:before {
+  content: ""; }
 
 /*=============================================
 =                  Begin: login               =
@@ -10546,7 +10592,7 @@ readers do not read off random characters that represent icons */
 ===============================================*/
 .inicio .container-fluid .row .MenuLogo {
   background-color: var(--dark);
-  height: 100vh;
+  height: 150vh;
   padding: 0; }
   .inicio .container-fluid .row .MenuLogo img {
     margin: 20px 0 20px 0;
@@ -10595,10 +10641,34 @@ readers do not read off random characters that represent icons */
       margin: 0;
       text-transform: capitalize;
       margin-left: 12px; }
-.inicio .container-fluid .row .col-lg-10 .row .jumbotron {
-  width: 100%;
-  position: absolute;
-  z-index: -1; }
+.inicio .container-fluid .row .col-lg-10 .jumbotronWelcome {
+  border-bottom: 1px solid #e9ecef; }
+  .inicio .container-fluid .row .col-lg-10 .jumbotronWelcome .jumbotron {
+    width: 100%;
+    z-index: -1; }
+    .inicio .container-fluid .row .col-lg-10 .jumbotronWelcome .jumbotron .container {
+      text-transform: capitalize; }
+.inicio .container-fluid .row .col-lg-10 .botonesForNavigator {
+  margin-top: 35px; }
+  .inicio .container-fluid .row .col-lg-10 .botonesForNavigator a {
+    margin-left: 70px;
+    padding-top: 60px;
+    max-width: 150px;
+    max-height: 150px;
+    padding-bottom: 70px; }
+    .inicio .container-fluid .row .col-lg-10 .botonesForNavigator a i {
+      font-size: 40px;
+      color: var(--white); }
+  .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonSlide {
+    background-color: var(--success); }
+  .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonFile {
+    background-color: var(--purple); }
+  .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonImage {
+    background-color: var(--info); }
+  .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonFilm {
+    background-color: var(--blue); }
+  .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonUsers {
+    background-color: var(--red); }
 
 /*===========  End of Inicio  ==============*/
 
