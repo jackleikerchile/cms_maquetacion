@@ -6501,8 +6501,11 @@ a.text-dark:hover, a.text-dark:focus {
 .fas,
 .external-link-alt,
 .angle-down,
+.angle-up,
 .film,
 .users,
+.user,
+.times,
 .far,
 .play-circle,
 .file-alt,
@@ -6517,7 +6520,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-rendering: auto;
   line-height: 1; }
 
-.external-link-alt, .angle-down, .play-circle, .file-alt, .image, .film, .users {
+.external-link-alt, .angle-down, .angle-up, .play-circle, .file-alt, .image, .film, .users, .user, .times {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -6601,8 +6604,11 @@ a.text-dark:hover, a.text-dark:focus {
 .fas.fa-pull-left,
 .fa-pull-left.external-link-alt,
 .fa-pull-left.angle-down,
+.fa-pull-left.angle-up,
 .fa-pull-left.film,
 .fa-pull-left.users,
+.fa-pull-left.user,
+.fa-pull-left.times,
 .far.fa-pull-left,
 .fa-pull-left.play-circle,
 .fa-pull-left.file-alt,
@@ -6614,8 +6620,11 @@ a.text-dark:hover, a.text-dark:focus {
 .fas.fa-pull-right,
 .fa-pull-right.external-link-alt,
 .fa-pull-right.angle-down,
+.fa-pull-right.angle-up,
 .fa-pull-right.film,
 .fa-pull-right.users,
+.fa-pull-right.user,
+.fa-pull-right.times,
 .far.fa-pull-right,
 .fa-pull-right.play-circle,
 .fa-pull-right.file-alt,
@@ -10501,8 +10510,11 @@ readers do not read off random characters that represent icons */
 .fas,
 .external-link-alt,
 .angle-down,
+.angle-up,
 .film,
-.users {
+.users,
+.user,
+.times {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -10545,6 +10557,11 @@ readers do not read off random characters that represent icons */
   font-size: 1.2em;
   cursor: pointer; }
 
+.angle-up:before {
+  content: "";
+  font-size: 1.2em;
+  cursor: pointer; }
+
 .play-circle:before {
   content: ""; }
 
@@ -10559,6 +10576,12 @@ readers do not read off random characters that represent icons */
 
 .users:before {
   content: ""; }
+
+.user:before {
+  content: ""; }
+
+.times:before {
+  content: ""; }
 
 /*=============================================
 =                  Begin: login               =
@@ -10641,6 +10664,22 @@ readers do not read off random characters that represent icons */
       margin: 0;
       text-transform: capitalize;
       margin-left: 12px; }
+    .inicio .container-fluid .row .col-lg-10 .userMenu .userMenber ol {
+      position: absolute;
+      top: 46px;
+      text-align: left;
+      width: 246px;
+      padding: 16px;
+      font-size: 12px;
+      border: 1px solid #e9ecef;
+      background-color: var(--white);
+      box-shadow: 0 0 2px var(--gray-dark);
+      display: none;
+      text-transform: capitalize; }
+      .inicio .container-fluid .row .col-lg-10 .userMenu .userMenber ol li {
+        list-style-type: none;
+        text-decoration: none;
+        line-height: 25px; }
 .inicio .container-fluid .row .col-lg-10 .jumbotronWelcome {
   border-bottom: 1px solid #e9ecef; }
   .inicio .container-fluid .row .col-lg-10 .jumbotronWelcome .jumbotron {
@@ -10655,10 +10694,11 @@ readers do not read off random characters that represent icons */
     padding-top: 60px;
     max-width: 150px;
     max-height: 150px;
-    padding-bottom: 70px; }
+    padding-bottom: 70px;
+    color: var(--white);
+    text-decoration: none; }
     .inicio .container-fluid .row .col-lg-10 .botonesForNavigator a i {
-      font-size: 40px;
-      color: var(--white); }
+      font-size: 40px; }
   .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonSlide {
     background-color: var(--success); }
   .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonFile {

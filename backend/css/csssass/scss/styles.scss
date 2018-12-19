@@ -53,6 +53,17 @@ $ColorTomate: #ff6347;
 }
 
 
+.angle-up {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-angle-up);
+	    font-size: 1.2em;
+	    cursor: pointer;
+	}
+}
+
 
 
 
@@ -104,6 +115,28 @@ $ColorTomate: #ff6347;
 		content: fa-content($fa-var-users);
 	}
 }
+
+
+// Icon profile of user //
+
+.user {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-user);
+	}
+}
+
+.times {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-times);
+	}
+}
+
 
 
 
@@ -228,6 +261,24 @@ $ColorTomate: #ff6347;
 					    	text-transform: capitalize;
 					        margin-left: 12px;
 					    }
+				        ol {
+						    position: absolute;
+						    top: 46px;
+						    text-align: left;
+						    width: 246px;
+						    padding: 16px;
+						    font-size: 12px;
+						    border: 1px solid gray("200");
+						    background-color: var(--white);
+						    box-shadow: 0 0 2px var(--gray-dark);
+						    display: none;
+						    text-transform: capitalize;
+						    li {
+						    	list-style-type: none;
+						    	text-decoration: none;
+						    	line-height: 25px;
+						    }
+				        }
 					}
 				}
 				.jumbotronWelcome {
@@ -248,9 +299,10 @@ $ColorTomate: #ff6347;
 					    max-width: 150px;
 					    max-height: 150px;
 					    padding-bottom: 70px;
+					    color: var(--white);
+					    text-decoration: none;
 						i {
 							font-size: 40px;
-							color: var(--white);
 						}
 					}
 					.botonSlide {
@@ -273,8 +325,5 @@ $ColorTomate: #ff6347;
 		}
 	}
 }
-
-
-
 
 /*===========  End of Inicio  ==============*/
