@@ -176,9 +176,6 @@ $ColorTomate: #ff6347;
 		}
 	}
 }
-
-
-
 /*===========  End of login  ==============*/
 
 
@@ -242,7 +239,6 @@ $ColorTomate: #ff6347;
 					}
 					.col-lg-8 {
 						p {
-						    width: 300px;
 						    margin: 0 auto;
 						    text-align: center;
 						    text-transform: capitalize;
@@ -295,7 +291,8 @@ $ColorTomate: #ff6347;
 					margin-top: 35px;
 					a {
 					    margin-left: 70px;
-					    padding-top: 60px;
+					    margin-bottom: 20px;
+					    padding-top: 50px;
 					    max-width: 150px;
 					    max-height: 150px;
 					    padding-bottom: 70px;
@@ -309,7 +306,7 @@ $ColorTomate: #ff6347;
 						background-color: var(--success);
 					}
 					.botonFile {
-						background-color: var(--purple);
+						background-color: var(--pink);
 					}
 					.botonImage {
 						background-color: var(--info);
@@ -325,5 +322,142 @@ $ColorTomate: #ff6347;
 		}
 	}
 }
-
 /*===========  End of Inicio  ==============*/
+
+
+
+/*=============================================
+=      Begin: Media Moviles Responsive  =
+=============================================*/
+
+
+
+
+/*/-------------------- Extra Small devices (Portrait phones, less than 576px)/*/
+@include media-breakpoint-only(xs) {  
+
+// Begin: Inicio //
+nav {
+	img {
+		background-color: var(--white);
+	}
+}
+
+
+
+.inicio {
+	.container-fluid {
+		.row {
+			.MenuLogo {
+				display: none;
+			}
+		}
+	}
+}
+
+
+}
+
+/*/------------ Small Device (Phones 576 px and up...!)-------------- /*/
+@include media-breakpoint-only(sm) {
+
+// Begin: Inicio //
+nav {
+	img {
+		background-color: var(--white);
+	}
+}
+
+
+
+.inicio {
+	.container-fluid {
+		.row {
+			.MenuLogo {
+				display: none;
+			}
+		}
+	}
+}
+
+
+
+}
+
+/*/------------ Medium devices (Tablets, 768px and up...!)------------- /*/
+@include media-breakpoint-only(md) {
+.bg-dark {
+	display: none !important;
+}
+
+
+
+// Begin: Inicio //
+.inicio {
+	.container-fluid {
+		.row {
+			.MenuLogo {
+				img {
+					max-width: 150px;
+				}
+			}
+			.col-md-9 {
+				.botonesForNavigator {
+					a {
+						margin-left: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+}
+
+/*---------- Large devices (desktops 992 px and up...!)------------ */
+@include media-breakpoint-only(lg) {
+.bg-dark {
+	display: none !important;
+}
+
+
+// Begin: Inicio //
+.inicio {
+	.container-fluid {
+		.row {
+			.MenuLogo {
+				img {
+					max-width: 135px;
+				}
+			}
+			.col-lg-10 {
+				.botonesForNavigator {
+					a {
+						margin-left: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+}
+
+/*/--------------- Extra large devices (large desktop, 1200px and up...!) ----------------- /*/
+@include media-breakpoint-only(xl) {  
+.bg-dark {
+	display: none !important;
+}
+
+
+}
+
+
+
+
+
+/*=====  End: Media Moviles Responsive  ======*/

@@ -10649,7 +10649,6 @@ readers do not read off random characters that represent icons */
         line-height: 1.2em;
         color: var(--white); }
   .inicio .container-fluid .row .col-lg-10 .userMenu .col-lg-8 p {
-    width: 300px;
     margin: 0 auto;
     text-align: center;
     text-transform: capitalize;
@@ -10691,7 +10690,8 @@ readers do not read off random characters that represent icons */
   margin-top: 35px; }
   .inicio .container-fluid .row .col-lg-10 .botonesForNavigator a {
     margin-left: 70px;
-    padding-top: 60px;
+    margin-bottom: 20px;
+    padding-top: 50px;
     max-width: 150px;
     max-height: 150px;
     padding-bottom: 70px;
@@ -10702,7 +10702,7 @@ readers do not read off random characters that represent icons */
   .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonSlide {
     background-color: var(--success); }
   .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonFile {
-    background-color: var(--purple); }
+    background-color: var(--pink); }
   .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonImage {
     background-color: var(--info); }
   .inicio .container-fluid .row .col-lg-10 .botonesForNavigator .botonFilm {
@@ -10711,5 +10711,45 @@ readers do not read off random characters that represent icons */
     background-color: var(--red); }
 
 /*===========  End of Inicio  ==============*/
+/*=============================================
+=      Begin: Media Moviles Responsive  =
+=============================================*/
+/*/-------------------- Extra Small devices (Portrait phones, less than 576px)/*/
+@media (max-width: 575.98px) {
+  nav img {
+    background-color: var(--white); }
+
+  .inicio .container-fluid .row .MenuLogo {
+    display: none; } }
+/*/------------ Small Device (Phones 576 px and up...!)-------------- /*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  nav img {
+    background-color: var(--white); }
+
+  .inicio .container-fluid .row .MenuLogo {
+    display: none; } }
+/*/------------ Medium devices (Tablets, 768px and up...!)------------- /*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-dark {
+    display: none !important; }
+
+  .inicio .container-fluid .row .MenuLogo img {
+    max-width: 150px; }
+  .inicio .container-fluid .row .col-md-9 .botonesForNavigator a {
+    margin-left: 12px; } }
+/*---------- Large devices (desktops 992 px and up...!)------------ */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bg-dark {
+    display: none !important; }
+
+  .inicio .container-fluid .row .MenuLogo img {
+    max-width: 135px; }
+  .inicio .container-fluid .row .col-lg-10 .botonesForNavigator a {
+    margin-left: 40px; } }
+/*/--------------- Extra large devices (large desktop, 1200px and up...!) ----------------- /*/
+@media (min-width: 1200px) {
+  .bg-dark {
+    display: none !important; } }
+/*=====  End: Media Moviles Responsive  ======*/
 
 /*# sourceMappingURL=styles.css.map */
