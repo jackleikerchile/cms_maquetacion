@@ -10717,14 +10717,32 @@ readers do not read off random characters that represent icons */
 /*/-------------------- Extra Small devices (Portrait phones, less than 576px)/*/
 @media (max-width: 575.98px) {
   nav img {
-    background-color: var(--white); }
+    background-color: var(--white);
+    margin-bottom: 20px;
+    margin-top: 10px; }
 
   .inicio .container-fluid .row .MenuLogo {
-    display: none; } }
+    display: none; }
+  .inicio .container-fluid .row .col-md-9 .userMenu .messages {
+    font-size: 12px !important; }
+    .inicio .container-fluid .row .col-md-9 .userMenu .messages a span span {
+      width: 15px;
+      height: 15px; }
+  .inicio .container-fluid .row .col-md-9 .userMenu .titleFecha p {
+    font-size: 9px; }
+  .inicio .container-fluid .row .col-md-9 .jumbotronWelcome .jumbotron-fluid .container h1 {
+    font-size: 2.5rem; }
+  .inicio .container-fluid .row .col-md-9 .botonesForNavigator a {
+    padding-top: 30px;
+    max-height: 115px;
+    max-width: 115px;
+    margin-left: 50px; } }
 /*/------------ Small Device (Phones 576 px and up...!)-------------- /*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   nav img {
-    background-color: var(--white); }
+    background-color: var(--white);
+    margin-bottom: 20px;
+    margin-top: 10px; }
 
   .inicio .container-fluid .row .MenuLogo {
     display: none; } }

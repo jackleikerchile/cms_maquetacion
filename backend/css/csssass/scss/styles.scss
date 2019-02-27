@@ -340,6 +340,8 @@ $ColorTomate: #ff6347;
 nav {
 	img {
 		background-color: var(--white);
+		margin-bottom: 20px;
+		margin-top: 10px;
 	}
 }
 
@@ -350,6 +352,43 @@ nav {
 		.row {
 			.MenuLogo {
 				display: none;
+			}
+			.col-md-9 {
+				.userMenu {
+					.messages {
+						font-size: 12px !important;
+						a {
+							span {
+								span {
+									width: 15px;
+									height: 15px;
+								}
+							}
+						}
+					}
+					.titleFecha {
+						p {
+							font-size: 9px;
+						}
+					}
+				}
+				.jumbotronWelcome {
+					.jumbotron-fluid {
+						.container {
+							h1 {
+								font-size: 2.5rem;
+							}
+						}
+					}
+				}
+				.botonesForNavigator {
+					a {
+						padding-top: 30px;
+						max-height: 115px;
+						max-width: 115px;
+						margin-left: 50px;
+					}
+				}
 			}
 		}
 	}
@@ -365,6 +404,9 @@ nav {
 nav {
 	img {
 		background-color: var(--white);
+		margin-bottom: 20px;
+		margin-top: 10px;
+
 	}
 }
 
