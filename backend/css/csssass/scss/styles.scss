@@ -64,6 +64,15 @@ $ColorTomate: #ff6347;
 	}
 }
 
+.arrow-down {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-arrow-down);
+		font-size: 1em;
+	}
+}
 
 
 
@@ -325,6 +334,38 @@ $ColorTomate: #ff6347;
 /*===========  End of Inicio  ==============*/
 
 
+/*=============================================
+=                  Begin: Slide               =
+===============================================*/
+
+.inicio {
+	.container-fluid {
+		.row {
+			.col-lg-10 {
+				.row {
+					.textSlideShow {
+					    border-top: 1px solid gray("200");
+					    margin-top: 16px;
+					    z-index: -1;
+					}
+				}
+				.imageSlideShow {
+					.col-lg-4 {
+						img {
+							max-width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/*===========  End of Slide  ==============*/
+
+
 
 /*=============================================
 =      Begin: Media Moviles Responsive  =
@@ -338,10 +379,22 @@ $ColorTomate: #ff6347;
 
 // Begin: Inicio //
 nav {
-	img {
-		background-color: var(--white);
-		margin-bottom: 20px;
-		margin-top: 10px;
+	.container {
+		.row {
+			.col-xs-12 {
+				padding: 0;
+				img {
+					background-color: var(--white);
+					margin-bottom: 20px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.navbar-toggler {
+		.navbar-toggler-icon {
+			width: 1.2em;
+		}
 	}
 }
 
@@ -386,7 +439,7 @@ nav {
 						padding-top: 30px;
 						max-height: 115px;
 						max-width: 115px;
-						margin-left: 50px;
+						margin-left: 30px;
 					}
 				}
 			}

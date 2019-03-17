@@ -6502,6 +6502,7 @@ a.text-dark:hover, a.text-dark:focus {
 .external-link-alt,
 .angle-down,
 .angle-up,
+.arrow-down,
 .film,
 .users,
 .user,
@@ -6520,7 +6521,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-rendering: auto;
   line-height: 1; }
 
-.external-link-alt, .angle-down, .angle-up, .play-circle, .file-alt, .image, .film, .users, .user, .times {
+.external-link-alt, .angle-down, .angle-up, .arrow-down, .play-circle, .file-alt, .image, .film, .users, .user, .times {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -6605,6 +6606,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-pull-left.external-link-alt,
 .fa-pull-left.angle-down,
 .fa-pull-left.angle-up,
+.fa-pull-left.arrow-down,
 .fa-pull-left.film,
 .fa-pull-left.users,
 .fa-pull-left.user,
@@ -6621,6 +6623,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-pull-right.external-link-alt,
 .fa-pull-right.angle-down,
 .fa-pull-right.angle-up,
+.fa-pull-right.arrow-down,
 .fa-pull-right.film,
 .fa-pull-right.users,
 .fa-pull-right.user,
@@ -10511,6 +10514,7 @@ readers do not read off random characters that represent icons */
 .external-link-alt,
 .angle-down,
 .angle-up,
+.arrow-down,
 .film,
 .users,
 .user,
@@ -10561,6 +10565,10 @@ readers do not read off random characters that represent icons */
   content: "";
   font-size: 1.2em;
   cursor: pointer; }
+
+.arrow-down:before {
+  content: "";
+  font-size: 1em; }
 
 .play-circle:before {
   content: ""; }
@@ -10712,14 +10720,29 @@ readers do not read off random characters that represent icons */
 
 /*===========  End of Inicio  ==============*/
 /*=============================================
+=                  Begin: Slide               =
+===============================================*/
+.inicio .container-fluid .row .col-lg-10 .row .textSlideShow {
+  border-top: 1px solid #e9ecef;
+  margin-top: 16px;
+  z-index: -1; }
+.inicio .container-fluid .row .col-lg-10 .imageSlideShow .col-lg-4 img {
+  max-width: 100%; }
+
+/*===========  End of Slide  ==============*/
+/*=============================================
 =      Begin: Media Moviles Responsive  =
 =============================================*/
 /*/-------------------- Extra Small devices (Portrait phones, less than 576px)/*/
 @media (max-width: 575.98px) {
-  nav img {
-    background-color: var(--white);
-    margin-bottom: 20px;
-    margin-top: 10px; }
+  nav .container .row .col-xs-12 {
+    padding: 0; }
+    nav .container .row .col-xs-12 img {
+      background-color: var(--white);
+      margin-bottom: 20px;
+      margin-top: 10px; }
+  nav .navbar-toggler .navbar-toggler-icon {
+    width: 1.2em; }
 
   .inicio .container-fluid .row .MenuLogo {
     display: none; }
@@ -10736,7 +10759,7 @@ readers do not read off random characters that represent icons */
     padding-top: 30px;
     max-height: 115px;
     max-width: 115px;
-    margin-left: 50px; } }
+    margin-left: 30px; } }
 /*/------------ Small Device (Phones 576 px and up...!)-------------- /*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   nav img {
