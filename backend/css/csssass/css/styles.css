@@ -6503,6 +6503,7 @@ a.text-dark:hover, a.text-dark:focus {
 .angle-down,
 .angle-up,
 .arrow-down,
+.pen,
 .film,
 .users,
 .user,
@@ -6521,7 +6522,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-rendering: auto;
   line-height: 1; }
 
-.external-link-alt, .angle-down, .angle-up, .arrow-down, .play-circle, .file-alt, .image, .film, .users, .user, .times {
+.external-link-alt, .angle-down, .angle-up, .arrow-down, .pen, .play-circle, .file-alt, .image, .film, .users, .user, .times {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -6607,6 +6608,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-pull-left.angle-down,
 .fa-pull-left.angle-up,
 .fa-pull-left.arrow-down,
+.fa-pull-left.pen,
 .fa-pull-left.film,
 .fa-pull-left.users,
 .fa-pull-left.user,
@@ -6624,6 +6626,7 @@ a.text-dark:hover, a.text-dark:focus {
 .fa-pull-right.angle-down,
 .fa-pull-right.angle-up,
 .fa-pull-right.arrow-down,
+.fa-pull-right.pen,
 .fa-pull-right.film,
 .fa-pull-right.users,
 .fa-pull-right.user,
@@ -10515,6 +10518,7 @@ readers do not read off random characters that represent icons */
 .angle-down,
 .angle-up,
 .arrow-down,
+.pen,
 .film,
 .users,
 .user,
@@ -10570,6 +10574,10 @@ readers do not read off random characters that represent icons */
   content: "";
   font-size: 1em; }
 
+.pen:before {
+  content: "";
+  font-size: 0.8em; }
+
 .play-circle:before {
   content: ""; }
 
@@ -10623,8 +10631,8 @@ readers do not read off random characters that represent icons */
 ===============================================*/
 .inicio .container-fluid .row .MenuLogo {
   background-color: var(--dark);
-  height: 150vh;
-  padding: 0; }
+  padding: 0;
+  height: 300vh; }
   .inicio .container-fluid .row .MenuLogo img {
     margin: 20px 0 20px 0;
     max-width: 234px;
@@ -10726,10 +10734,71 @@ readers do not read off random characters that represent icons */
   border-top: 1px solid #e9ecef;
   margin-top: 16px;
   z-index: -1; }
-.inicio .container-fluid .row .col-lg-10 .imageSlideShow .col-lg-4 img {
-  max-width: 100%; }
+.inicio .container-fluid .row .col-lg-10 .imageSlideShow {
+  margin: 2px;
+  border: 2px dashed #adb5bd; }
+  .inicio .container-fluid .row .col-lg-10 .imageSlideShow .col-lg-4 {
+    padding: 14px 17px; }
+    .inicio .container-fluid .row .col-lg-10 .imageSlideShow .col-lg-4 a {
+      background-color: #ff3636;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 17px;
+      color: var(--white);
+      text-align: center; }
+    .inicio .container-fluid .row .col-lg-10 .imageSlideShow .col-lg-4 img {
+      max-width: 100%; }
+.inicio .container-fluid .row button {
+  float: right;
+  margin-top: 50px;
+  text-transform: capitalize;
+  color: var(--white); }
+.inicio .container-fluid .row .editSlide {
+  margin-top: 140px;
+  border-top: 1px solid #e9ecef;
+  padding: 45px 18px;
+  border-bottom: 1px solid #e9ecef; }
+  .inicio .container-fluid .row .editSlide .col-lg-4 .imageEdit {
+    width: 80%; }
+  .inicio .container-fluid .row .editSlide .col-lg-4 .containerImageEdit {
+    border: 2px dashed #adb5bd;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .inicio .container-fluid .row .editSlide .col-lg-4 .containerTitleImage {
+    border: 2px dashed #adb5bd;
+    padding: 10px;
+    margin-bottom: 20px; }
+    .inicio .container-fluid .row .editSlide .col-lg-4 .containerTitleImage form {
+      margin-top: 20px; }
+  .inicio .container-fluid .row .editSlide .col-lg-4 a {
+    position: absolute;
+    right: 25px;
+    background-color: var(--blue);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    color: var(--white);
+    line-height: 1.5rem; }
 
 /*===========  End of Slide  ==============*/
+/*=============================================
+=                  Begin: Articulos           =
+===============================================*/
+.inicio .container-fluid .row .col-lg-10 .buttonAddArticles {
+  float: none;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 18px; }
+.inicio .container-fluid .row .col-lg-10 .borderTextArticles {
+  margin: 20px 4px; }
+  .inicio .container-fluid .row .col-lg-10 .borderTextArticles .col-lg-12 {
+    padding: 20px;
+    border: 1px solid #adb5bd; }
+
+/*===========  End of Articulos  ==============*/
 /*=============================================
 =      Begin: Media Moviles Responsive  =
 =============================================*/

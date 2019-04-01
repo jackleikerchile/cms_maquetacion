@@ -10,6 +10,7 @@ $theme-colors: (
 $rgbaBlue: rgba(0, 0, 150, 1);
 $rgbaBlueLight: rgba(0, 100, 200, 1);
 $ColorTomate: #ff6347;
+$redStrong: #ff3636;
 
 
 
@@ -74,6 +75,15 @@ $ColorTomate: #ff6347;
 	}
 }
 
+.pen {
+	@extend %fa-icon;
+	@extend .fas;
+
+	&:before {
+		content: fa-content($fa-var-pen);
+		font-size: 0.8em;
+	}
+}
 
 
 
@@ -198,8 +208,8 @@ $ColorTomate: #ff6347;
 		.row {
 			.MenuLogo {
 				background-color: var(--dark);
-				height: 150vh;
 				padding: 0;
+				height: 300vh;
 				img {
 				    margin: 20px 0 20px 0;
 				    max-width: 234px;
@@ -350,10 +360,64 @@ $ColorTomate: #ff6347;
 					}
 				}
 				.imageSlideShow {
+					margin: 2px;
+					border: 2px dashed gray('500');
 					.col-lg-4 {
+						padding: 14px 17px;
+						a {
+							background-color: $redStrong;
+							width: 30px;
+							height: 30px;
+							position: absolute;
+							right: 17px;
+							color: var(--white);
+							text-align: center;
+						}
 						img {
 							max-width: 100%;
 						}
+					}
+				}
+			}
+			button {
+			    float: right;
+			    margin-top: 50px;
+			    text-transform: capitalize;
+			    color: var(--white);
+			}
+			.editSlide {
+				margin-top: 140px;
+				border-top: 1px solid gray("200");
+				padding: 45px 18px;
+				border-bottom: 1px solid gray("200");
+				.col-lg-4 {
+					.imageEdit {
+						width: 80%;
+					}
+					.containerImageEdit {
+					    border: 2px dashed gray("500");
+					    padding: 15px;
+					    font-size: 14px;
+					    margin-bottom: 20px;
+					}
+					.containerTitleImage {
+						border: 2px dashed #adb5bd;
+						padding: 10px;
+						margin-bottom: 20px;
+						form {
+							margin-top: 20px;
+						}
+					}
+					a {
+						position: absolute;
+					    right: 25px;
+					    background-color: var(--blue);
+					    width: 30px;
+					    height: 30px;
+					    text-align: center;
+					    border-radius: 4px;
+					    color: var(--white);
+					    line-height: 1.5rem;
 					}
 				}
 			}
@@ -364,6 +428,37 @@ $ColorTomate: #ff6347;
 
 
 /*===========  End of Slide  ==============*/
+
+
+
+
+/*=============================================
+=                  Begin: Articulos           =
+===============================================*/
+.inicio {
+	.container-fluid {
+		.row {
+			.col-lg-10 {
+				.buttonAddArticles {
+				    float: none;
+					margin-top: 20px;
+					font-size: 18px;
+					padding: 10px 18px;
+				}
+				.borderTextArticles {
+					margin: 20px 4px;
+					.col-lg-12 {
+						padding: 20px;
+						border: 1px solid gray('500');
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*===========  End of Articulos  ==============*/
 
 
 

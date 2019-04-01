@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/csssass/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/csssass/css/stylesShow.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
 
 	<link rel="shortcut icon" href="img/icono.jpg" type="image/x-icon">
@@ -31,7 +32,7 @@
 </head>
 <body>
 <!--/*=========================================
-=                  Begin: Inicio               =
+=                  Begin: Slide               =
 ===============================================*/-->
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
 	<div class="container">
@@ -80,7 +81,7 @@
 			      <a class="nav-link text-center" href="slide.html"><i class="external-link-alt"></i> slide</a>
 			    </li>
 			    <li class="nav-item">
-			      <a class="nav-link text-center" href="#"><i class="external-link-alt"></i> articulos</a>
+			      <a class="nav-link text-center" href="articulos.html"><i class="external-link-alt"></i> articulos</a>
 			    </li>
 			    <li class="nav-item">
 			      <a class="nav-link text-center" href="#"><i class="external-link-alt"></i> imagenes</a>
@@ -133,30 +134,161 @@
 				</div>
 				<div class="row imageSlideShow">
 					<div class="col-lg-4">
+						<a href="#" title="close"><i class="times"></i></a>
 						<img src="img/slide/slide01.jpg" alt="img-slide" class="img-responsive">
 					</div>
 					<div class="col-lg-4">
+						<a href="#" title="close"><i class="times"></i></a>
 						<img src="img/slide/slide02.jpg" alt="img-slide" class="img-responsive">
 					</div>
 					<div class="col-lg-4">
+						<a href="#" title="close"><i class="times"></i></a>
 						<img src="img/slide/slide03.jpg" alt="img-slide" class="img-responsive">
 					</div>
 					<div class="col-lg-4">
+						<a href="#" title="close"><i class="times"></i></a>
 						<img src="img/slide/slide04.jpg" alt="img-slide" class="img-responsive">
 					</div>
 					<div class="col-lg-4">
+						<a href="#" title="close"><i class="times"></i></a>
 						<img src="img/slide/slide01.jpg" alt="img-slide" class="img-responsive">
 					</div>
 					<div class="col-lg-4">
+						<a href="#" title="close"><i class="times"></i></a>
 						<img src="img/slide/slide02.jpg" alt="img-slide" class="img-responsive">
 					</div>
 				</div>
+				<button type="button" class="btn btn-warning">ordenar slides</button>
+				<div class="row editSlide">
+					<div class="col-lg-4">
+						<div class="containerImageEdit">
+							<img src="img/slide/slide01.jpg" alt="img-slide" class="img-responsive imageEdit">
+							<a href="#" title="edit"><i class="pen"></i></a>
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="containerTitleImage">
+							<img src="img/slide/slide02.jpg" alt="img-slide" class="img-thumbnail img-responsive">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="form-group">
+									<input type="text" name="" class="form-control" placeholder="Titulo">
+								</div>
+								<div class="form-group">
+									<textarea name="" class="form-control" placeholder="Descripcion"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="containerTitleImage">
+							<img src="img/slide/slide03.jpg" alt="img-slide" class="img-thumbnail img-responsive">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="form-group">
+									<input type="text" name="" class="form-control" placeholder="Titulo">
+								</div>
+								<div class="form-group">
+									<textarea name="" class="form-control" placeholder="Descripcion"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="containerImageEdit">
+							<img src="img/slide/slide01.jpg" alt="img-slide" class="img-responsive imageEdit">
+							<a href="#" title="edit"><i class="pen"></i></a>
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="containerTitleImage">
+							<img src="img/slide/slide02.jpg" alt="img-slide" class="img-thumbnail img-responsive">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="form-group">
+									<input type="text" name="" class="form-control" placeholder="Titulo">
+								</div>
+								<div class="form-group">
+									<textarea name="" class="form-control" placeholder="Descripcion"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="containerTitleImage">
+							<img src="img/slide/slide03.jpg" alt="img-slide" class="img-thumbnail img-responsive">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="form-group">
+									<input type="text" name="" class="form-control" placeholder="Titulo">
+								</div>
+								<div class="form-group">
+									<textarea name="" class="form-control" placeholder="Descripcion"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!--/*=============================================
+				=            Begin: slide            =
+				=============================================*/-->
+				<div class="slideShow">
+					<div class="row">
+						<div id="slide" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<ul>
+						       <li>
+						       	<img src="img/slide/slide01.jpg">
+						       	<div class="slideCaption">
+						       		<h3>Lorem Ipsum</h3>
+							   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						       	</div>
+						       </li>
+						       
+						       <li>
+						       	<img src="img/slide/slide02.jpg"> 	
+						       	<div class="slideCaption">
+						       		<h3>Lorem Ipsum</h3>
+							   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						       	</div>
+						       </li>
+						       
+						       <li>
+						       	<img src="img/slide/slide03.jpg">
+						       	<div class="slideCaption">
+						       		<h3>Lorem Ipsum</h3>
+							   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						       	</div>
+						       </li>
+						       
+						       <li>
+						       	<img src="img/slide/slide04.jpg">
+						       	<div class="slideCaption">
+						       		<h3>Lorem Ipsum</h3>
+							   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						       	</div>
+						       </li>
+
+							</ul>
+
+						    <ol id="indicadores">			
+								<li role-slide = "1"><span class="fa fa-circle carrouselCircle"></span></li>
+								<li role-slide = "2"><span class="fa fa-circle carrouselCircle"></span></li>
+								<li role-slide = "3"><span class="fa fa-circle carrouselCircle"></span></li>
+								<li role-slide = "4"><span class="fa fa-circle carrouselCircle"></span></li>
+							</ol>
+
+							<div id="slideIzq"><span class="fa fa-chevron-left arrows"></span></div>
+							<div id="slideDer"><span class="fa fa-chevron-right arrows"></span></div>
+						</div>
+					</div>
+				</div>
+				<!--/*=====  End: slide  ======*/-->
 			</div>
 		</div>
 	</div>
 </div>
 
-<!--/*===========  End of Inicio  ==============*/-->
+<!--/*===========  End of Eslide  ==============*/-->
 
 
 
